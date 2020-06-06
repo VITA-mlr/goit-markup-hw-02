@@ -1,0 +1,200 @@
+/* 
+studio - 000000
+web - 2196F3
+
+меню, фільтри - 212121
+меню.активньій - 2196F3
+
+адрес - 757575
+адрес.активньій - 2196F3
+
+герой, кнопка - FFFFFF
+
+заголовок - 212121
+текст - 757575
+
+
+футер-адрес, E-mail - rgba(255, 255, 255, 0.6);
+разработка - rgba(255, 255, 255, 0.4);
+*/
+
+/* Общие стили */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--header-menu-color);
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --logo-color: #000000;
+  /* --special-logo-color: #2196F3; */
+
+  --text-color: #757575;
+  --header-menu-color: #212121;
+  --menu-active-color: #2196f3;
+  --hero-button-color: #ffffff;
+  --team-color: #f5f4fa;
+
+  --fotter-address-color: rgba(255, 255, 255, 0.6);
+  --developer-color: rgba(255, 255, 255, 0.4);
+}
+/* Стили для логотипа */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: var(--logo-color);
+}
+
+.logo-blue {
+  color: var(--menu-active-color);
+}
+
+/* Навигация в шапке */
+.nav-list {
+  /* text-decoration: none; */
+  font-weight: 500;
+  /* font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em; */
+}
+
+/* .nav-a {
+  color: var(--header-menu-color);
+} */
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--menu-active-color);
+}
+
+.hero {
+  background-color: var(--text-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  /* font-size: 44px;
+  line-height: 60px; */
+
+  text-align: center;
+  /* letter-spacing: 0.06em; */
+  text-transform: uppercase;
+
+  color: var(--hero-button-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--hero-button-color);
+}
+
+/* Секции */
+.sectoin-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  /* letter-spacing: 0.03em; */
+
+  color: var(--header-menu-color);
+}
+
+/* Секция Особенности */
+.features-item-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--header-menu-color);
+}
+
+.features-item-text {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* Чем мы занимаемся */
+.we_make-signature {
+  background-color: var(--text-color);
+}
+
+.we_make-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--hero-button-color);
+}
+
+/* Команда */
+.team {
+  background-color: var(--team-color);
+}
+
+.team-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--header-menu-color);
+}
+
+.team-profetion {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+
+.footer {
+  background-color: var(--text-color);
+}
+
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.footer-contact {
+  color: var(--fotter-address-color);
+}
+
+.developed {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--developer-color);
+}
