@@ -21,6 +21,7 @@ web - 2196F3
 /* Общие стили */
 body {
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   background: #e5e5e5;
 }
 
@@ -43,13 +44,18 @@ ul {
   --hero-button-color: #ffffff;
   --team-color: #f5f4fa;
 
+  --footer-backgraund: #2f303a;
   --fotter-address-color: rgba(255, 255, 255, 0.6);
   --developer-color: rgba(255, 255, 255, 0.4);
 }
 /* Стили для логотипа */
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+
   color: var(--logo-color);
 }
 
@@ -57,13 +63,48 @@ ul {
   color: var(--menu-active-color);
 }
 
+.footer .logo {
+  color: var(--hero-button-color);
+}
+
+/* Кнопка */
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  /* line-height: 1.8; */
+  letter-spacing: 0.06em;
+
+  display: inline-block;
+
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+}
+
+.filters-item.button {
+  color: var(--header-menu-color);
+  background-color: var(--hero-button-color);
+}
+
+.filters-item.button:hover,
+.filters-item.button:focus {
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+}
+
 /* Навигация в шапке */
+.header-background {
+  color: var(--hero-button-color);
+}
+
 .nav-list {
-  /* text-decoration: none; */
   font-weight: 500;
-  /* font-size: 14px;
+  font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.02em; */
+  letter-spacing: 0.02em;
+
+  color: var(--header-menu-color);
 }
 
 /* .nav-a {
@@ -75,37 +116,76 @@ ul {
   color: var(--menu-active-color);
 }
 
+.nav-item.current {
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+}
+
+/* Навигация в подвале */
+.footer {
+  background-color: var(--footer-backgraund);
+}
+
+.footer b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--hero-button-color);
+}
+
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--hero-button-color);
+}
+
+.footer-contact {
+  color: var(--footer-address-color);
+}
+
+.developed {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--developer-color);
+}
+
+/* ------------ index.html --------------- */
+/* Герой */
 .hero {
   background-color: var(--text-color);
 }
 
 .hero-title {
   font-weight: 900;
-  /* font-size: 44px;
-  line-height: 60px; */
+  font-size: 44px;
+  line-height: 60px;
 
   text-align: center;
-  /* letter-spacing: 0.06em; */
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--hero-button-color);
 }
 
-.hero-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  color: var(--hero-button-color);
-}
-
 /* Секции */
 .sectoin-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
 
   color: var(--header-menu-color);
 }
@@ -123,6 +203,10 @@ ul {
 
 .features-item-text {
   font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
@@ -170,31 +254,54 @@ ul {
   color: var(--text-color);
 }
 
-.footer {
-  background-color: var(--text-color);
-}
+/* -------------- portfolio.html -------------- */
 
-.footer-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  color: #ffffff;
-}
-
-.footer-contact {
-  color: var(--fotter-address-color);
-}
-
-.developed {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-
+/* Фильтры*/
+.list-filters {
   text-align: center;
   letter-spacing: 0.03em;
+}
 
-  color: var(--developer-color);
+.filters-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--header-menu-color);
+}
+
+.filters-item.current {
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+}
+
+/* Порфолио */
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--hero-button-color);
+
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-item-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+
+  color: var(--header-menu-color);
+}
+
+.about-project {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
 }

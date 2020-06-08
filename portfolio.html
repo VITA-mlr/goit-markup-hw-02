@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header-background">
         <!-- Логотип сайта -->
-        <a href="" class="logo"><span class="logo-blue">Web</span> Studio</a>
+        <a href="./index.html" class="logo"
+          ><span class="logo-blue">Web</span> Studio</a
+        >
         <!-- Навигация по сайту -->
         <ul class="nav-list">
           <li><a class="nav-item" href="">Студия</a></li>
-          <li><a class="nav-item" href="">Портфолио</a></li>
+          <li><a class="nav-item current" href="">Портфолио</a></li>
           <li><a class="nav-item" href="">Контакты</a></li>
         </ul>
         <!-- Контакты -->
@@ -46,12 +54,12 @@
       <h1>Студия</h1>
       <div>
         <h2>Фильтры</h2>
-        <ul>
-          <li><a href="">Все</a></li>
-          <li><a href="">Веб-сайты</a></li>
-          <li><a href="">Приложения</a></li>
-          <li><a href="">Дизайн</a></li>
-          <li><a href="">Маркетинг</a></li>
+        <ul class="list-filters">
+          <li><a class="filters-item current button" href="">Все</a></li>
+          <li><a class="filters-item button" href="">Веб-сайты</a></li>
+          <li><a class="filters-item button" href="">Приложения</a></li>
+          <li><a class="filters-item button" href="">Дизайн</a></li>
+          <li><a class="filters-item button" href="">Маркетинг</a></li>
         </ul>
       </div>
 
@@ -62,74 +70,84 @@
             src="./images/project-1.jpg"
             alt="Изображение веб-сайта на ноутбуке"
           />
-          <h3>Технокряк</h3>
-          <p>Веб-сайт</p>
+          <p class="text">
+            Технокряк это современная площадка распространения коронавируса.
+            Компании используют эту платформу для цифрового шпионажа и атак на
+            защищённые сервера конкурентов.
+          </p>
+          <h3 class="portfolio-item-header">Технокряк</h3>
+          <p class="about-project">Веб-сайт</p>
         </li>
         <li>
           <img
             src="./images/project-2.jpg"
             alt="Изображение спортсменов играющих в баскетбол"
           />
-          <h3>Постер New Orlean vs Golden Star</h3>
-          <p>Дизайн</p>
+          <h3 class="portfolio-item-header">
+            Постер New Orlean vs Golden Star
+          </h3>
+          <p class="about-project">Дизайн</p>
         </li>
         <li>
           <img src="./images/project-3.jpg" alt="Изображение логотипа" />
-          <h3>Ресторан Seafood</h3>
-          <p>Приложение</p>
+          <h3 class="portfolio-item-header">Ресторан Seafood</h3>
+          <p class="about-project">Приложение</p>
         </li>
         <li>
           <img src="./images/project-4.jpg" alt="Изображение наушников" />
-          <h3>Проект Prime</h3>
-          <p>Маркетинг</p>
+          <h3 class="portfolio-item-header">Проект Prime</h3>
+          <p class="about-project">Маркетинг</p>
         </li>
         <li>
           <img src="./images/project-5.jpg" alt="Изображение двух коробок" />
-          <h3>Проект Boxes</h3>
-          <p>Приложение</p>
+          <h3 class="portfolio-item-header">Проект Boxes</h3>
+          <p class="about-project">Приложение</p>
         </li>
         <li>
           <img src="./images/design_decisions.jpg" alt="Изображение монитора" />
-          <h3>Inspiration has no Borders</h3>
-          <p>Веб-сайт</p>
+          <h3 class="portfolio-item-header">Inspiration has no Borders</h3>
+          <p class="about-project">Веб-сайт</p>
         </li>
         <li>
           <img
             src="./images/project-7.jpg"
             alt="Изображение розвернутого журнала"
           />
-          <h3>Издание Limited Edition</h3>
-          <p>Дизайн</p>
+          <h3 class="portfolio-item-header">Издание Limited Edition</h3>
+          <p class="about-project">Дизайн</p>
         </li>
         <li>
           <img
             src="./images/project-8.jpg"
             alt="Изображение логотипа на этекетке"
           />
-          <h3>Проект LAB</h3>
-          <p>Маркетинг</p>
+          <h3 class="portfolio-item-header">Проект LAB</h3>
+          <p class="about-project">Маркетинг</p>
         </li>
         <li>
           <img
             src="./images/desktop_applications.jpg"
             alt="Изображение ноутбука с печатающими руками"
           />
-          <h3>Growing Business</h3>
-          <p>Приложение</p>
+          <h3 class="portfolio-item-header">Growing Business</h3>
+          <p class="about-project">Приложение</p>
         </li>
       </ul>
     </main>
 
-    <footer>
+    <footer class="footer">
       <!--Контактная информация-->
       <div>
-        <a href="" class="logo"><span class="logo-blue">Web</span> Studio</a>
+        <a href="./index.html" class="logo"
+          ><span class="logo-blue">Web</span> Studio</a
+        >
 
-        <address>
+        <address class="footer-address">
           г. Киев, пр-т Леси Украинки, 26, <br />
 
-          <a href="mailto:info@example.com">info@example.com</a> <br />
-          <a href="tel:+380991111111">+38 099 111 11 11</a>
+          <span class="footer-contact">info@example.com</span>
+          <br />
+          <span class="footer-contact">+38 099 111 11 11</span>\
         </address>
       </div>
 
@@ -150,20 +168,18 @@
         <b>Подпишитесь на рассылку</b>
         <form method="post">
           <input type="email" name="user-email" placeholder="E-mail" />
-          <input type="submit" value="Подписаться" />
+          <!-- <input type="submit" value="Подписаться" /> -->
 
-          <!-- <a href="">
-                
-                Подписаться
-                <img src="images/icon_send.svg" alt="Иконка стрелки" width="24" />
-                
-              </a>-->
+          <a class="button" href="">
+            Подписаться
+            <img src="images/icon_send.svg" alt="Иконка стрелки" width="24" />
+          </a>
         </form>
       </div>
 
       <!--Здесь должна быть линия-->
 
-      <p>2020 | Developed by GoIT Students</p>
+      <p class="developed">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
