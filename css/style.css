@@ -34,8 +34,7 @@ web - 2196F3
 /* General styles */
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  background: #e5e5e5;
+  background: var(--hero-button-color);
 }
 
 a {
@@ -106,6 +105,9 @@ ul {
 /* .nav-a {
   color: var(--header-menu-color);
 } */
+.nav-item {
+  font-style: normal;
+}
 
 .nav-item:hover,
 .nav-item:focus {
@@ -113,8 +115,8 @@ ul {
 }
 
 .nav-item.current {
-  color: var(--hero-button-color);
-  background-color: var(--menu-active-color);
+  color: var(--menu-active-color);
+  /* background-color: var(--menu-active-color); */
 }
 
 /* Navigation in footer */
@@ -137,6 +139,7 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--hero-button-color);
+  font-style: normal;
 }
 
 .footer-contact {
@@ -250,20 +253,25 @@ ul {
   color: var(--header-menu-color);
 }
 
-.filters-item.current {
+.filters-item:hover {
   color: var(--hero-button-color);
   background-color: var(--menu-active-color);
 }
+/* 
+.filters-item.current {
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+} */
 
 /* Portfolio */
-.text {
+/* .text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--hero-button-color);
   background: rgba(33, 150, 243, 0.9);
-}
+} */
 
 .portfolio-item-header {
   font-weight: 700;
